@@ -1,4 +1,5 @@
 ._*
+.*.swo
 .*.swp
 .bundle
 .DS_Store
