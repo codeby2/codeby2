@@ -262,7 +262,7 @@ body {
   background: black url("../images/bg.jpg") no-repeat top center;
   color: white; }
 
-body.home {
+body.index {
   background: black url("../images/home-bg.jpg") no-repeat top center; }
 
 body.how-we-work {
