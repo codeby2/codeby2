@@ -1,0 +1,395 @@
+/* All CSS files are dynamically created from SASS files.
+ * Please use the SASS files to make changes to the CSS.
+ * --------------------------------------------------------- */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent; }
+
+html {
+  overflow-y: scroll;
+  background: black url("../images/bg.jpg") no-repeat top center; }
+
+body {
+  font: 13px/1.231 sans-serif;
+  *font-size: small; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+select, input, textarea {
+  color: #444444; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0 0 1px transparent;
+  margin: 0 0 20px 0;
+  font-weight: normal; }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.2em; }
+
+h4 {
+  font-size: 0.9em; }
+
+h5 {
+  font-size: 0.95em; }
+
+h6 {
+  font-size: 0.8em; }
+
+p {
+  line-height: 1.85em; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+ins {
+  background-color: #ffff99;
+  color: black;
+  text-decoration: none; }
+
+mark {
+  background-color: #ffff99;
+  color: black;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+a:hover, a:active {
+  outline: none; }
+
+a:link {
+  -webkit-tap-highlight-color: #ff5e99; }
+
+a {
+  color: #66ccff; }
+  a:active, a:visited {
+    color: #66ccff; }
+  a:hover {
+    color: #66ccff; }
+
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+ul {
+  margin-left: 2em; }
+
+ol {
+  margin-left: 2em;
+  list-style-type: decimal; }
+
+nav ul, nav li {
+  list-style: none;
+  list-style-image: none; }
+
+small {
+  font-size: 85%; }
+
+strong, th {
+  font-weight: bold; }
+
+td {
+  vertical-align: top; }
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px; }
+
+input, select {
+  vertical-align: middle; }
+
+select, input, textarea, button {
+  font: 99% sans-serif; }
+
+textarea {
+  overflow: auto; }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+label {
+  cursor: pointer; }
+
+input[type="button"], input[type="submit"], input[type="image"] {
+  cursor: pointer; }
+
+button {
+  cursor: pointer;
+  margin: 0;
+  width: auto;
+  overflow: visible; }
+
+input, select, textarea {
+  margin: 0; }
+
+input:invalid, textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red; }
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
+  background-color: #f0dddd; }
+
+.ie6 legend, .ie7 legend {
+  margin-left: -7px; }
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr; }
+
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+  .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix {
+  zoom: 1; }
+  .clearfix:before {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both; }
+
+::-moz-selection {
+  background: #ff5e99;
+  color: white;
+  text-shadow: none; }
+
+::selection {
+  background: #ff5e99;
+  color: white;
+  text-shadow: none; }
+
+.debug {
+  background: #ff5e99; }
+
+/* Layout */
+body {
+  margin: 0 auto;
+  background: black url("../images/bg.jpg") no-repeat top center;
+  color: white; }
+
+body.home {
+  background: black url("../images/home-bg.jpg") no-repeat top center; }
+
+body.how-we-work {
+  background: black url("../images/how-we-work-bg.jpg") no-repeat top center; }
+
+header, #main, footer {
+  width: 1000px;
+  margin: 0 auto; }
+
+#logo-contact {
+  background: url("../images/logo-bg.png") no-repeat top left;
+  width: 308px;
+  height: 224px;
+  float: left; }
+  #logo-contact p a#logo {
+    background: url("../images/logo.png") no-repeat top left;
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 20px 50px;
+    display: block;
+    text-indent: -9999px;
+    width: 201px;
+    height: 99px; }
+  #logo-contact p.email, #logo-contact p.phone {
+    margin: 0 0 3px 85px;
+    padding-left: 33px;
+    line-height: 1.5em;
+    color: #66ccff; }
+
+nav ul li {
+  display: block;
+  float: left;
+  margin-top: 50px; }
+  nav ul li a {
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-family: "Francois One", serif; }
+    nav ul li a:hover {
+      color: white; }
+  nav ul li a.rss, nav ul li a.twitter, nav ul li a.vimeo, nav ul li a.facebook {
+    text-indent: -9999px;
+    display: block; }
+
+#main {
+  margin-top: 75px;
+  min-height: 570px; }
+
+#footer-wide {
+  width: 100%; }
+
+footer {
+  text-align: right; }
+  footer p {
+    padding: 20px;
+    font-size: 11px; }
+    footer p a:link, footer p a:active, footer p a:visited {
+      color: white; }
+    footer p a:hover {
+      color: #66ccff; }
+
+#logo-contact p.email {
+  background: url("../images/email-icon.png") no-repeat left bottom; }
+  #logo-contact p.email a {
+    text-decoration: none; }
+#logo-contact p.phone {
+  background: url("../images/phone-icon.png") no-repeat left bottom; }
+
+nav ul li a {
+  margin-right: 10px; }
+  nav ul li a.first {
+    margin-left: 85px; }
+  nav ul li a.rss {
+    background: url("../images/rss-icon.png") no-repeat left bottom;
+    width: 20px;
+    height: 20px;
+    margin: -8px 5px 0 85px; }
+  nav ul li a.twitter {
+    background: url("../images/twitter-icon.png") no-repeat left bottom;
+    width: 14px;
+    height: 20px;
+    margin: -8px 5px 0 5px; }
+  nav ul li a.facebook {
+    background: url("../images/facebook-icon.png") no-repeat left bottom;
+    width: 14px;
+    height: 20px;
+    margin: -8px 5px 0 5px; }
+  nav ul li a.vimeo {
+    background: url("../images/vimeo-icon.png") no-repeat left bottom;
+    width: 25px;
+    height: 20px;
+    margin: -8px 5px 0 5px; }
+
+#main #heading {
+  width: 580px;
+  text-align: center; }
+#main h1.home {
+  font-family: "Allerta", serif;
+  font-size: 40px;
+  letter-spacing: -3px;
+  text-shadow: 0 0 1px transparent; }
+#main #expertise ul li {
+  list-style: none; }
+#main #expertise .phase-1, #main #expertise .phase-2, #main #expertise .phase-3 {
+  float: left;
+  margin: 25px 30px 25px 0; }
+#main #expertise .phase-1 {
+  padding: 0 0 0 35px; }
+#main #technologies {
+  background: white url("../images/tech-focus-icons.png") no-repeat center center;
+  margin: 20px 0 0 60px;
+  border: 3px solid white;
+  padding: 1em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -opera-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  width: 450px;
+  height: 75px; }
+
+span.strike {
+  text-decoration: line-through;
+  color: #5f8c0c; }

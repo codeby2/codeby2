@@ -1,0 +1,93 @@
+/* Layout
+
+body
+  :margin 0 auto
+  :background $c2-bg url("../images/bg.jpg") no-repeat top center
+  :color $text
+
+body.home
+  :background $c2-bg url("../images/home-bg.jpg") no-repeat top center
+
+body.how-we-work
+  :background $c2-bg url("../images/how-we-work-bg.jpg") no-repeat top center
+
+//*header & logo section
+
+header, #main, footer
+  :width $c2-width
+  :margin 0 auto
+
+//header
+//  :position fixed
+//  :top 0
+
+#logo-contact
+  :background url("../images/logo-bg.png") no-repeat top left
+  :width 308px
+  :height 224px
+  :float left
+  p a#logo
+    :background url("../images/logo.png") no-repeat top left
+    :color #fff
+    :text-decoration none
+    :font-size 36px
+    :text-transform uppercase
+    :margin 20px 50px
+    :display block
+    :text-indent -9999px
+    :width 201px
+    :height 99px
+  p.email, p.phone
+    :margin 0 0 3px 85px
+    :padding-left 33px
+    :line-height 1.5em
+    :color $blue
+
+//* Nav
+
+nav ul li
+  :display block
+  :float left
+  :margin-top 50px
+  a
+    :text-transform uppercase
+    :padding 5px
+    :font-size 14px
+    :color #fff
+    :text-decoration none
+    :display block
+    :float left
+    :font-family 'Francois One', serif
+    &:hover
+      :color #fff
+  a.rss, a.twitter, a.vimeo, a.facebook
+    :text-indent -9999px
+    :display block
+
+//* Main
+
+#main
+  :margin-top 75px
+  :min-height 570px
+
+//* Footer
+
+#footer-wide
+  // :background $c2-bg url("../images/bg.jpg") no-repeat top center
+  // :background #273747
+  // :border-top 2px $blue ridge
+  :width 100%
+  // :-ms-filter "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"
+  // :filter alpha(opacity=60)
+  // :opacity .6
+
+footer
+  :text-align right
+  // :opacity 1
+  p
+    :padding 20px
+    :font-size 11px
+    a:link, a:active, a:visited
+      :color #fff
+    a:hover
+      :color $blue

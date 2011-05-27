@@ -1,0 +1,59 @@
+!!! :html5
+
+/[if lt IE 7 ] <html class="no-js ie6" lang="en">
+/[if IE 7 ] <html class="no-js ie7" lang="en">
+/[if IE 8 ] <html class="no-js ie8" lang="en">
+/[if (gte IE 9)|!(IE)] <!--> <html class="no-js" lang="en"> <!--
+
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %title Code by 2
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "", :name => "author"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %link{:rel=>"stylesheet", :type=>"text/css", :href=>"http://fonts.googleapis.com/css?family=Francois+One|Allerta|Droid+Sans"}
+    %link{:href => "/favicon.ico", :rel => "shortcut icon"}
+    %link{:href => "/apple-touch-icon.png", :rel => "apple-touch-icon"}
+    %link{:href => "stylesheets/application.css", :rel => "stylesheet"}
+    %script{:src => "javascripts/libs/modernizr-1.7.min.js"}
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"}
+    %script{:src => "javascripts/application.js"}
+  %body.home
+    %header.clearfix
+      #logo-contact
+        %p= link_to "Code by 2", "/", :id => "logo"
+        %p.email= mail_to "query@codeby2.com", "Contact us", :encode => "hex"
+        %p.phone 1 (800) 555-1212
+      %nav
+        %ul
+          %li= link_to "How we work", "/how-we-work", :class => "first"
+          %li= link_to "Team", "/team"
+          %li= link_to "Pricing", "/pricing"
+          %li= link_to "Blog", "/blog"
+          %li= link_to "F.A.Q.", "/faq"
+          %li= link_to "rss", "#", :class => "rss"
+          %li= link_to "twitter", "#", :class => "twitter"
+          %li= link_to "facebook", "#", :class => "facebook"
+          %li= link_to "vimeo", "#", :class => "vimeo"
+    #main{:role => "main"}
+      = yield
+    / eo #main
+    #footer-wide
+      %footer
+        %p
+          &copy; Copyright 2011 Code by 2. All Rights Reserved.
+          = link_to "Attribution", "#"
+          = link_to "Terms", "#"
+
+    /[if lt IE 7 ]
+      %script{:src => "javascripts/libs/dd_belatedpng.js"}
+      :javascript
+        DD_belatedPNG.fix("img, .png_bg");
+
+    :javascript
+      var _gaq=[["_setAccount","UA-535330-17"],["_trackPageview"]]; 
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+      s.parentNode.insertBefore(g,s)}(document,"script"));
