@@ -17,14 +17,14 @@
     %link{:href => "/favicon.ico", :rel => "shortcut icon"}
     %link{:href => "/apple-touch-icon.png", :rel => "apple-touch-icon"}
     %link{:href => "stylesheets/application.css", :rel => "stylesheet"}
+    %script{:src => "javascripts/libs/modernizr-1.7.min.js"}
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"}
     %script{:src => "javascripts/application.js"}
-    %script{:src => "javascripts/libs/modernizr-1.7.min.js"}
-  %body
+  %body{:class => "#{params[:action]}"}
     %header.clearfix
       #logo-contact
         %p= link_to "Code by 2", "/", :id => "logo"
-        %p.email Contact us
+        %p.email= mail_to "Contact us", "query@codeby2.com", :encode => "hex"
         %p.phone 1 (800) 555-1212
       %nav
         %ul
@@ -43,8 +43,8 @@
     %footer
       %p
         &copy; Copyright 2011 Code by 2. All Rights Reserved.
-        = link_to "Attribution", "#"
-        = link_to "Terms", "#"
+        = link_to "Attribution", "/attributions"
+        = link_to "Terms", "/terms"
 
     /[if lt IE 7 ]
       %script{:src => "javascripts/libs/dd_belatedpng.js"}
@@ -52,7 +52,7 @@
         DD_belatedPNG.fix("img, .png_bg");
 
     :javascript
-      var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; 
+      var _gaq=[["_setAccount","UA-535330-17"],["_trackPageview"]]; 
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
       g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
       s.parentNode.insertBefore(g,s)}(document,"script"));
