@@ -365,11 +365,13 @@ nav ul li a {
 #main #heading {
   width: 580px;
   text-align: center; }
-#main h1.home {
+#main h1.home, #main h1.what-is {
   font-family: "Allerta", serif;
   font-size: 40px;
   letter-spacing: -3px;
   text-shadow: 0 0 1px transparent; }
+#main h2 {
+  text-transform: uppercase; }
 #main #expertise ul li {
   list-style: none; }
 #main #expertise .phase-1, #main #expertise .phase-2, #main #expertise .phase-3 {
