@@ -455,8 +455,8 @@ span.strike {
 #team-location {
   text-align: center;
   width: 802px;
-  height: 546px;
-  background: url("../images/team-map.png") no-repeat 0 80px;
+  height: 556px;
+  background: url("../images/team-map.png") no-repeat 0 90px;
   margin: 0 auto 50px; }
   #team-location h2 {
     width: 550px;
