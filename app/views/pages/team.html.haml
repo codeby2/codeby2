@@ -1,25 +1,28 @@
 #heading
   %h1.what-is
-    Providing a comprehensive
+    Offers a comprehensive
     %br/
     set of consulting services
     %br/
-    to clients across
-    %br/
-    multiple industries
+    across multiple industries
   %h2
-    WE ARE YOUR TEAM MEMBERS
-#alpha-box.clearfix
-  #section
-    .team-mate-box
-      %dl
-        %dt Carmelyne Thompson
-        %dd UX / Design Lead
-    .team-mate-box
-      %dl
-        %dt Gordon D
-        %dd Coder
-    .team-mate-box
-      %dl
-        %dt Samnang
-        %dd Coder
+    We are your
+    %span.impt-cb2 Code by 2
+    team members
+    
+#team
+  .team-mate-box
+    %dl
+      %dt= image_tag("../images/logo.png", :alt => "Carmelyne Thompson", :title => "Carmelyne Thompson")
+      %dd.name Carmelyne Thompson
+      %dd UX / Design & Coder
+  .team-mate-box
+    %dl
+      %dt= image_tag("../images/logo.png", :alt => "Gordon DuQuesnay", :title => "Gordon DuQuesnay")
+      %dd.name Gordon DuQuesnay
+      %dd Coder
+  .team-mate-box
+    %dl
+      %dt= image_tag("../images/logo.png", :alt => "Samnang Chhun", :title => "Samnang Chhun")
+      %dd.name Samnang Chhun
+      %dd Coder

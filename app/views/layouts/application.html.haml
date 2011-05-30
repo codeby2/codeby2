@@ -16,10 +16,10 @@
     %link{:rel=>"stylesheet", :type=>"text/css", :href=>"http://fonts.googleapis.com/css?family=Francois+One|Allerta|Droid+Sans"}
     %link{:href => "/favicon.ico", :rel => "shortcut icon"}
     %link{:href => "/apple-touch-icon.png", :rel => "apple-touch-icon"}
-    %link{:href => "stylesheets/application.css", :rel => "stylesheet"}
     %script{:src => "javascripts/libs/modernizr-1.7.min.js"}
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"}
     %script{:src => "javascripts/application.js"}
+    %link{:href => "stylesheets/application.css", :rel => "stylesheet"}
   %body{:class => "#{params[:action]}"}
     %header.clearfix
       #logo-contact
@@ -37,7 +37,7 @@
           %li= link_to "twitter", "#", :class => "twitter"
           %li= link_to "facebook", "#", :class => "facebook"
           %li= link_to "vimeo", "#", :class => "vimeo"
-    #main{:role => "main"}
+    #main{:role => "main", :class=> "clearfix"}
       = yield
     / eo #main
     %footer

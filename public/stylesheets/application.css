@@ -102,7 +102,7 @@ a {
   a:active, a:visited {
     color: #66ccff; }
   a:hover {
-    color: #66ccff; }
+    color: white; }
 
 pre, code, kbd, samp {
   font-family: monospace, sans-serif; }
@@ -302,7 +302,7 @@ nav ul li {
     text-transform: uppercase;
     padding: 5px;
     font-size: 14px;
-    color: white;
+    color: #66ccff;
     text-decoration: none;
     display: block;
     float: left;
@@ -370,7 +370,7 @@ nav ul li a {
   font-size: 40px;
   letter-spacing: -3px;
   text-shadow: 0 0 1px transparent; }
-#main h25 {
+#main h2 {
   text-transform: uppercase;
   padding-bottom: 4px; }
 #main #expertise ul li {
@@ -392,14 +392,17 @@ nav ul li a {
   border-radius: 8px;
   width: 450px;
   height: 75px; }
-#main .impt-c2, #main .impt-rails {
+#main .impt-c2, #main .impt-rails, #main .impt-cb2 {
   padding: 3px 8px; }
 #main .impt-c2 {
   background: #ff5e99; }
 #main .impt-rails {
   background: #ac1f23; }
+#main .impt-cb2 {
+  background: #66ccff;
+  color: #011b2e; }
 #main #alpha-box {
-  background: #021521;
+  background: #011b2e;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=9)";
   filter: alpha(opacity=9);
   opacity: 0.9;
@@ -426,5 +429,25 @@ span.strike {
     border-bottom: 1px dashed #66ccff;
     text-shadow: 0 0 1px transparent;
     letter-spacing: -1px; }
-  #section .team-mate-box {
-    margin: 0 0 30px 0; }
+
+#team {
+  margin: 40px; }
+  #team .team-mate-box {
+    width: 250px;
+    float: left;
+    padding: 15px;
+    margin: 0 10px 30px 10px;
+    background: #011b2e;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=9)";
+    filter: alpha(opacity=9);
+    opacity: 0.9;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px; }
+    #team .team-mate-box dd.name {
+      color: #66ccff;
+      font-family: "Allerta", serif;
+      font-size: 1.2em;
+      font-weight: normal;
+      letter-spacing: -1px;
+      margin: 10px 0 -2px 0; }

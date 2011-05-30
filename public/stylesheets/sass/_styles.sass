@@ -46,7 +46,7 @@ nav ul li a
     :font-size 40px
     :letter-spacing -3px
     :text-shadow 0 0 1px transparent
-  h25
+  h2
     :text-transform uppercase
     :padding-bottom 4px
   #expertise
@@ -72,14 +72,17 @@ nav ul li a
     // :opacity .6
     :width 450px
     :height 75px
-  .impt-c2, .impt-rails
+  .impt-c2, .impt-rails, .impt-cb2
     :padding 3px 8px
   .impt-c2
     :background $c2-tap-color
   .impt-rails
     :background $c2-rails-color
+  .impt-cb2
+    :background $blue
+    :color $c2-blue-bg
   #alpha-box
-    :background #021521
+    :background $c2-blue-bg
     :-ms-filter "progid:DXImageTransform.Microsoft.Alpha(Opacity=9)"
     :filter alpha(opacity=9)
     :opacity .9
@@ -109,5 +112,25 @@ span.strike
     :border-bottom 1px dashed $blue
     :text-shadow 0 0 1px transparent
     :letter-spacing -1px
+
+#team
+  :margin 40px
   .team-mate-box
-    :margin 0 0 30px 0
+    :width 250px
+    :float left
+    :padding 15px
+    :margin 0 10px 30px 10px
+    :background $c2-blue-bg
+    :-ms-filter "progid:DXImageTransform.Microsoft.Alpha(Opacity=9)"
+    :filter alpha(opacity=9)
+    :opacity .9
+    :-moz-border-radius 15px
+    :-webkit-border-radius 15px
+    :border-radius 15px
+    dd.name
+      :color $blue
+      :font-family 'Allerta', serif
+      :font-size 1.2em
+      :font-weight normal
+      :letter-spacing -1px
+      :margin 10px 0 -2px 0
