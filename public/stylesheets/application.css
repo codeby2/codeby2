@@ -370,8 +370,9 @@ nav ul li a {
   font-size: 40px;
   letter-spacing: -3px;
   text-shadow: 0 0 1px transparent; }
-#main h2 {
-  text-transform: uppercase; }
+#main h25 {
+  text-transform: uppercase;
+  padding-bottom: 4px; }
 #main #expertise ul li {
   list-style: none; }
 #main #expertise .phase-1, #main #expertise .phase-2, #main #expertise .phase-3 {
@@ -391,7 +392,16 @@ nav ul li a {
   border-radius: 8px;
   width: 450px;
   height: 75px; }
+#main .impt-c2, #main .impt-rails {
+  padding: 3px 8px; }
+#main .impt-c2 {
+  background: #ff5e99; }
+#main .impt-rails {
+  background: #ac1f23; }
 
 span.strike {
   text-decoration: line-through;
   color: #5f8c0c; }
+
+#section {
+  margin: 160px 0; }
