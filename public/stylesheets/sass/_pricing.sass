@@ -1,0 +1,96 @@
+.pricing
+  :text-align center
+  a img
+    :border 0
+
+  table
+    :border-collapse collapse
+
+  th.side
+    :background transparent url("../images/i/bg_th_side.gif")no-repeat bottom left
+
+  td.side
+    :text-align right
+    :background transparent url("../images/i/bg_td_side.gif")no-repeat bottom left
+    :width 180px
+    :font bold 12px / 15px verdana
+    :color #6e6f37
+    :padding-right 8px
+
+  th
+    //:height 64px
+    //:border-right 1px solid #fff
+    :vertical-align bottom
+    :color #fff
+    :font normal 21px / 27px arial
+    :letter-spacing 2px
+    :background transparent url("../images/i/bg_th.gif")no-repeat bottom left
+
+  td
+    :text-align center
+    :background transparent url("../images/i/bg_td.gif")no-repeat bottom left
+    //:border-right 1px solid #fff
+    :color #fff
+    :width 108px
+    //:height 40px
+    :font bold 12px / 18px verdana
+    &.on
+      :background transparent url("../images/i/bg_td_on.gif")no-repeat bottom left
+
+  th.on
+    :background transparent url("../images/i/bg_th_on.gif")no-repeat bottom left
+    :padding-bottom 9px
+    :width 148px
+
+  tfoot td
+    :background transparent url("../images/i/bg_foot_td.gif")no-repeat top left
+    //:height 64px
+    :vertical-align top
+    //:padding-top 8px
+    &.on
+      :background transparent url("../images/i/bg_foot_td_on.gif")no-repeat top left
+      :padding-top 16px
+    &.side
+      :background transparent url("../images/i/bg_foot_td_side.gif")no-repeat top left
+
+  #formcontainer
+    :width 443px
+    :height 239px
+    :background transparent url("../images/i/bg_form.gif")no-repeat top left
+    :position absolute
+    :top 24px
+    :left 341px
+    form
+      :padding 8px 10px
+      :margin 0
+    h2
+      :margin 0
+      :padding 0 0 14px 0
+      :font bold 21px / 27px arial
+      :color #fff
+    fieldset
+      :border none
+      :padding 0
+    label
+      :display block
+      :float left
+      :font bold 12px / 18px verdana
+      :color #fff
+      :padding-bottom 12px
+      &.email
+        :width 350px
+        input
+          :width 340px
+      &.password
+        :clear left
+        :padding-right 40px
+        input
+          :width 150px
+      &.retype input
+        :width 150px
+    fieldset.buttons
+      :padding-top 10px
+      :clear left
+
+  #prices
+    :position relative

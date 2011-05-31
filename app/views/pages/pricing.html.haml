@@ -1,0 +1,88 @@
+#heading
+
+#prices
+  #formcontainer{:style => "display:none;"}
+    %form{:action => "#"}
+      %h2 Get an account!
+      %fieldset
+        %label.email{:for => "email"}
+          Email
+          %br/
+          %input#email{:type => "text"}/
+        %label.password{:for => "crazypassword"}
+          Password
+          %br/
+          %input#crazypassword{:type => "password"}/
+        %label.retype{:for => "retype"}
+          Retype Password
+          %br/
+          %input#retype{:type => "password"}/
+      %fieldset.buttons
+        %input{:alt => "Cancel", :onclick => "hideTheForm();return false;", :src => "../images/i/button_cancel.gif", :type => "image"}/
+        %input{:alt => "Submit", :onclick => "return false;", :src => "../images/i/button_submit.gif", :type => "image"}/
+  %table#pricetable
+    %thead
+      %tr
+        %th.side &nbsp;
+        %th.choiceA $3,150
+        %th.choiceB $100
+        %th.choiceC.on $10
+        %th.choiceD $1
+        %th.choiceE Free
+    %tfoot
+      %tr
+        %td.side &nbsp;
+        %td.choiceA
+          %a{:href => "signUpChoiceA.html", :onclick => "activateThisColumn('choiceA');return false;"}
+            %img{:alt => "Choose", :src => "../images/i/choose.gif"}/
+        %td.choiceB
+          %a{:href => "signUpChoiceB.html", :onclick => "activateThisColumn('choiceB');return false;"}
+            %img{:alt => "Choose", :src => "../images/i/choose.gif"}/
+        %td.choiceC.on
+          %a{:href => "signUpChoiceC.html", :onclick => "activateThisColumn('choiceC');return false;"}
+            %img{:alt => "Choose", :src => "../images/i/choose.gif"}/
+        %td.choiceD
+          %a{:href => "signUpChoiceD.html", :onclick => "activateThisColumn('choiceD');return false;"}
+            %img{:alt => "Choose", :src => "../images/i/choose.gif"}/
+        %td.choiceE
+          %a{:href => "signUpChoiceE.html", :onclick => "activateThisColumn('choiceE');return false;"}
+            %img{:alt => "Choose", :src => "../images/i/choose.gif"}/
+    %tbody
+      %tr
+        %td.side Number of sprints
+        %td.choiceA 1
+        %td.choiceB 1
+        %td.choiceC.on 1
+        %td.choiceD 1
+        %td.choiceE 1
+      %tr
+        %td.side Hours per week
+        %td.choiceA 15 hours
+        %td.choiceB 20 hours
+        %td.choiceC.on 25 hours
+        %td.choiceD 35 hours
+        %td.choiceE 40 hours
+      %tr
+        %td.side A pair of coders
+        %td.choiceA
+          %img{:alt => "yes", :src => "../images/i/check.png"}/
+        %td.choiceB
+          %img{:alt => "yes", :src => "../images/i/check.png"}/
+        %td.choiceC.on
+          %img{:alt => "yes", :src => "../images/i/check.png"}/
+        %td.choiceD
+          %img{:alt => "yes", :src => "../images/i/check.png"}/
+        %td.choiceE
+          %img{:alt => "yes", :src => "../images/i/check.png"}/
+      %tr
+        %td.side A UX / Design coder
+        %td.choiceA
+          %img{:alt => "yes", :src => "../images/i/check.png"}/
+        %td.choiceB
+          %img{:alt => "yes", :src => "../images/i/check.png"}/
+        %td.choiceC.on
+          %img{:alt => "yes", :src => "../images/i/check.png"}/
+        %td.choiceD
+          %img{:alt => "yes", :src => "../images/i/check.png"}/
+        %td.choiceE
+          %img{:alt => "yes", :src => "../images/i/check.png"}/
