@@ -24,28 +24,33 @@
     %thead
       %tr
         %th.side &nbsp;
+        - # (75.00 * 15 * 2) + (60 * 15)
         %th.choiceA $3,150
-        %th.choiceB $100
-        %th.choiceC.on $10
-        %th.choiceD $1
-        %th.choiceE Free
+        - # (75.00 * 20 * 2) + (60 * 20)
+        %th.choiceB $4,200
+        - # (75.00 * 25 * 2) + (60 * 25)
+        %th.choiceC.on $5,250
+        - # (75.00 * 30 * 2) + (60 * 30)
+        %th.choiceD $6,300
+        - # (75.00 * 35 * 2) + (60 * 35)
+        %th.choiceE $7,350
     %tfoot
       %tr
         %td.side &nbsp;
         %td.choiceA
-          %a{:href => "signUpChoiceA.html", :onclick => "activateThisColumn('choiceA');return false;"}
+          %a{:href => "#", :onclick => "activateThisColumn('choiceA');return false;"}
             %img{:alt => "Choose", :src => "../images/i/choose.gif"}/
         %td.choiceB
-          %a{:href => "signUpChoiceB.html", :onclick => "activateThisColumn('choiceB');return false;"}
+          %a{:href => "#", :onclick => "activateThisColumn('choiceB');return false;"}
             %img{:alt => "Choose", :src => "../images/i/choose.gif"}/
         %td.choiceC.on
-          %a{:href => "signUpChoiceC.html", :onclick => "activateThisColumn('choiceC');return false;"}
+          %a{:href => "#", :onclick => "activateThisColumn('choiceC');return false;"}
             %img{:alt => "Choose", :src => "../images/i/choose.gif"}/
         %td.choiceD
-          %a{:href => "signUpChoiceD.html", :onclick => "activateThisColumn('choiceD');return false;"}
+          %a{:href => "#", :onclick => "activateThisColumn('choiceD');return false;"}
             %img{:alt => "Choose", :src => "../images/i/choose.gif"}/
         %td.choiceE
-          %a{:href => "signUpChoiceE.html", :onclick => "activateThisColumn('choiceE');return false;"}
+          %a{:href => "#", :onclick => "activateThisColumn('choiceE');return false;"}
             %img{:alt => "Choose", :src => "../images/i/choose.gif"}/
     %tbody
       %tr
@@ -60,10 +65,10 @@
         %td.choiceA 15 hours
         %td.choiceB 20 hours
         %td.choiceC.on 25 hours
-        %td.choiceD 35 hours
-        %td.choiceE 40 hours
+        %td.choiceD 30 hours
+        %td.choiceE 35 hours
       %tr
-        %td.side A pair of coders
+        %td.side 2 coders
         %td.choiceA
           %img{:alt => "yes", :src => "../images/i/check.png"}/
         %td.choiceB
@@ -75,7 +80,7 @@
         %td.choiceE
           %img{:alt => "yes", :src => "../images/i/check.png"}/
       %tr
-        %td.side A UX / Design coder
+        %td.side 1 ux/design
         %td.choiceA
           %img{:alt => "yes", :src => "../images/i/check.png"}/
         %td.choiceB
