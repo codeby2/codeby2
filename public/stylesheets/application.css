@@ -443,7 +443,8 @@ span.strike {
     opacity: 0.9;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
-    border-radius: 15px; }
+    border-radius: 15px;
+    text-align: center; }
     #team .team-mate-box dd.name {
       color: #66ccff;
       font-family: "Allerta", serif;
