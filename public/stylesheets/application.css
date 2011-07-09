@@ -437,7 +437,7 @@ span.strike {
     float: left;
     padding: 15px;
     margin: 30px 10px;
-    background: #011b2e;
+    background: black;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=9)";
     filter: alpha(opacity=9);
     opacity: 0.9;
