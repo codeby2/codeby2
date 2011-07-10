@@ -259,7 +259,7 @@ input:invalid, textarea:invalid {
 /* Layout */
 body {
   margin: 0 auto;
-  background: black url("../images/bg.jpg") no-repeat top center;
+  background: black url("../images/body-bg.jpg") no-repeat top center;
   color: white; }
 
 body.index {
